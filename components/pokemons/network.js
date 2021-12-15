@@ -1,9 +1,10 @@
-//Se encuentran los endpoints de los pokemones
+
 
 const express = require('express')
 const response = require('../../networtk/response')
 const controller = require('./controller')
 const router = express.Router()
+const verify = require('../../midleware/verify')
 
 router.get('/abilities/:pokemon_Name', (req, res) => {
     controller.get_PokemonHabilities(req.params.pokemon_Name)

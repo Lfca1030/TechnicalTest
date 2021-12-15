@@ -5,5 +5,6 @@ dotenv.config();
 
 module.exports = {
     DBUrl: process.env.urlDB,
-    port: process.env.PORT || 3000
+    port: process.env.PORT || 3000,
+    //secret:`secretkey`
 }

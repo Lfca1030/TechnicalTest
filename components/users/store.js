@@ -14,14 +14,22 @@ async function get_UserBy_Email(email){
     return await Model.find({'email':email})
 }
 
-async function update_PersonalData(username,newUserData){
+async function updatePersonalData(username,newUserData){
     return await Model.updateOne({'username':username}, newUserData)
 }
+
+// async function update_Pet(username,newPet){
+//     return await Model.updateOne({'username':username},newPet)
+// }
+
+
+//{'pokemonName':pokemon}, {'personalizedName':nickName}
 
 
 module.exports = {
     register, 
     get_UserBy_Username,
     get_UserBy_Email,
-    update_PersonalData
+    updatePersonalData,
+    // update_Pet
 }

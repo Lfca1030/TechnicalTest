@@ -10,6 +10,7 @@ const mySchema = new Schema({
     password: String,
     factAboutMe: String,
     favouritePokemons: Array,
+    pet: Object
 });
 
 module.exports = mongoose.model("users", mySchema);
